@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold">Portfolio</h3>
-            <p className="text-gray-400 mt-1">Crafting digital experiences</p>
+            <h3 className="text-xl font-bold">Rutuja Gaikwad</h3>
+            <p className="text-gray-400 mt-1">Software Developer</p>
           </div>
           
           <div className="flex flex-wrap gap-x-8 gap-y-2 justify-center">
@@ -34,7 +34,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Rutuja Gaikwad. All rights reserved.
           </p>
           
           <p className="text-gray-400 text-sm flex items-center mt-2 md:mt-0">

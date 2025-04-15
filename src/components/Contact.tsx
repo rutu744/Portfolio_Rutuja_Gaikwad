@@ -3,15 +3,15 @@ import { useState } from "react";
 import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 
 const Contact = () => {
-  // Contact information - edit these details to customize your contact section
+  // Contact information based on your resume
   const contactInfo = {
     email: "rutugaikwad744@gmail.com",
-    phone: "+91 9876543210", // Replace with your actual phone number
-    location: "Mumbai, India",
+    phone: "(+91) 7447876967", 
+    location: "Solapur, India",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/rutugaikwad", // Replace with your actual LinkedIn profile
-      github: "https://github.com/rutugaikwad", // Replace with your actual GitHub profile
-      twitter: "https://twitter.com/rutugaikwad", // Replace with your actual Twitter handle
+      linkedin: "https://linkedin.com/in/rutuja-gaikwad", // Update with your actual LinkedIn profile when available
+      github: "https://github.com/rutu744",
+      twitter: "https://twitter.com/rutuja_gaikwad", // Update with your actual Twitter handle when available
     }
   };
 

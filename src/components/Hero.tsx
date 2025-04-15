@@ -4,9 +4,9 @@ import { ArrowDown } from "lucide-react";
 const Hero = () => {
   // Personal information - edit these details to customize your hero section
   const personalInfo = {
-    name: "Rutu Gaikwad",
-    title: "Web Developer & Designer",
-    description: "I create beautiful, functional websites and digital experiences that help businesses grow and succeed online."
+    name: "Rutuja Gaikwad",
+    title: "Software Developer",
+    description: "Passionate and motivated Software Developer, eager to kickstart my career in building innovative digital solutions. Recently completed my studies and gained hands-on experience in coding, problem-solving, and application development."
   };
 
   return (

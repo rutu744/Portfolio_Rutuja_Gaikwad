@@ -1,20 +1,28 @@
 
 const Skills = () => {
-  const technicalSkills = [
-    { name: "HTML5/CSS3", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "React.js", level: 80 },
-    { name: "TypeScript", level: 75 },
-    { name: "Node.js", level: 70 },
-    { name: "UI/UX Design", level: 65 },
+  const programmingSkills = [
+    { name: "Java", level: 85 },
+    { name: "Python", level: 80 },
+    { name: "PHP", level: 85 },
+    { name: "JavaScript", level: 80 },
+    { name: "HTML/CSS", level: 85 },
+    { name: "SQL", level: 80 },
+  ];
+
+  const frontendSkills = [
+    { name: "ReactJS", level: 75 },
+    { name: "HTML", level: 85 },
+    { name: "Tailwind CSS", level: 80 },
+    { name: "JavaScript", level: 80 },
+    { name: "Bootstrap", level: 85 },
   ];
 
   const softSkills = [
-    { name: "Communication", level: 95 },
-    { name: "Problem Solving", level: 90 },
-    { name: "Teamwork", level: 85 },
-    { name: "Time Management", level: 80 },
-    { name: "Creativity", level: 75 },
+    { name: "Teamwork", level: 90 },
+    { name: "Problem-Solving", level: 85 },
+    { name: "Communication", level: 85 },
+    { name: "Creativity", level: 80 },
+    { name: "Collaboration", level: 85 },
   ];
 
   return (
@@ -24,9 +32,9 @@ const Skills = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="animate-fade-in delay-100">
-            <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Technical Skills</h3>
+            <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Programming Skills</h3>
             <div className="space-y-6">
-              {technicalSkills.map((skill, index) => (
+              {programmingSkills.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
                     <span className="font-medium">{skill.name}</span>
@@ -44,9 +52,9 @@ const Skills = () => {
           </div>
           
           <div className="animate-fade-in delay-200">
-            <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Soft Skills</h3>
+            <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Frontend Skills</h3>
             <div className="space-y-6">
-              {softSkills.map((skill, index) => (
+              {frontendSkills.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
                     <span className="font-medium">{skill.name}</span>
@@ -68,9 +76,33 @@ const Skills = () => {
         </div>
         
         <div className="mt-16">
+          <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Soft Skills</h3>
+          <div className="space-y-6">
+            {softSkills.map((skill, index) => (
+              <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                <div className="flex justify-between mb-2">
+                  <span className="font-medium">{skill.name}</span>
+                  <span className="text-gray-500">{skill.level}%</span>
+                </div>
+                <div className="skill-bar">
+                  <div 
+                    className="skill-progress" 
+                    style={{ 
+                      width: `${skill.level}%`,
+                      backgroundColor: '#3a86ff' // Using primary color
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="mt-16">
           <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Technologies I Use</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            {["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Git", "Figma", "Next.js", "Redux"].map((tech, index) => (
+            {["Java", "Python", "PHP", "ReactJS", "HTML", "Tailwind CSS", "JavaScript", "Bootstrap", 
+              "SQL", "MySQL", "SQLite", "Github", "VS Code", "Android Studio"].map((tech, index) => (
               <span 
                 key={index}
                 className="px-4 py-2 bg-white shadow-sm rounded-full border border-gray-200 text-gray-700 hover:border-portfolio-primary transition-colors duration-300"

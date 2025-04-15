@@ -1,20 +1,19 @@
 
-import { User, Calendar, MapPin, Mail } from "lucide-react";
+import { User, Calendar, MapPin, Mail, Phone, Github } from "lucide-react";
 
 const About = () => {
   // Personal information - edit these details to customize your portfolio
   const personalInfo = {
-    name: "Rutu Gaikwad",
+    name: "Rutuja Gaikwad",
+    dob: "13/10/2003",
     email: "rutugaikwad744@gmail.com",
-    location: "Mumbai, India",
-    experience: "2 Years",
-    about: `I'm a passionate web developer with a strong background in creating responsive, 
-    user-friendly websites and applications. With expertise in both front-end and 
-    back-end technologies, I bring creative ideas to life through clean, efficient code.
+    phone: "(+91) 7447876967",
+    location: "Solapur, India",
+    github: "github.com/rutu744",
+    about: `I'm a passionate and motivated Software Developer, eager to kickstart my career in building innovative digital solutions. 
+    Recently completed my studies and gained hands-on experience in coding, problem-solving, and application development.
     
-    When I'm not coding, you can find me exploring new technologies, contributing to 
-    open-source projects, or enjoying the outdoors. I believe in continuous learning 
-    and staying up-to-date with the latest industry trends.`
+    I'm excited to apply my knowledge and grow in a collaborative team environment, continuously learning and adapting to new technologies.`
   };
 
   return (
@@ -27,7 +26,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-xl shadow-xl h-[400px]">
               <div className="absolute inset-0 bg-gradient-to-r from-portfolio-primary to-portfolio-secondary opacity-20"></div>
               <img 
-                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
@@ -70,10 +69,26 @@ const About = () => {
               </div>
               
               <div className="flex items-center">
+                <Phone className="text-portfolio-primary mr-3" size={20} />
+                <div>
+                  <p className="text-sm text-gray-500">Phone</p>
+                  <p className="font-medium">{personalInfo.phone}</p>
+                </div>
+              </div>
+
+              <div className="flex items-center">
                 <Calendar className="text-portfolio-primary mr-3" size={20} />
                 <div>
-                  <p className="text-sm text-gray-500">Experience</p>
-                  <p className="font-medium">{personalInfo.experience}</p>
+                  <p className="text-sm text-gray-500">Date of Birth</p>
+                  <p className="font-medium">{personalInfo.dob}</p>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <Github className="text-portfolio-primary mr-3" size={20} />
+                <div>
+                  <p className="text-sm text-gray-500">GitHub</p>
+                  <p className="font-medium">{personalInfo.github}</p>
                 </div>
               </div>
             </div>

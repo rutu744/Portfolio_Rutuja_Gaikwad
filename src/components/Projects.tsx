@@ -2,40 +2,35 @@
 import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
-  // Project information - edit or add more projects as needed
+  // Project information based on your resume
   const projects = [
     {
-      title: "E-Commerce Website",
-      description: "A fully responsive e-commerce platform built with React and Node.js. Features include product browsing, cart functionality, user authentication, and payment processing.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      liveLink: "https://ecommerce-demo.example.com",
-      codeLink: "https://github.com/rutugaikwad/ecommerce-website",
+      title: "NIRBHAYA: Women Safety and Support System",
+      description: "Designed and developed a mobile app featuring voice-activated SOS, Shake-to-Activate SOS, Manual SOS button and a chatbot for real-time support, enhancing women's safety.",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      tags: ["Java", "Android Studio", "XML", "SQLite"],
+      liveLink: "#",
+      codeLink: "https://github.com/rutu744/nirbhaya-app",
+      year: "2024-2025"
     },
     {
-      title: "Task Management App",
-      description: "A Kanban-style task management application that helps users organize their projects. Built with React and Firebase for real-time updates and authentication.",
-      image: "https://images.unsplash.com/photo-1611224885990-2ae8a8bb85e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-      tags: ["React", "Firebase", "CSS", "Redux"],
-      liveLink: "https://task-manager.example.com",
-      codeLink: "https://github.com/rutugaikwad/task-manager",
+      title: "Algorithm Visualizer",
+      description: "Designed and implemented an interactive web-based tool to visualize various sorting algorithms, including Bubble Sort, Merge Sort, and Quick Sort, providing real-time visual feedback.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      tags: ["JavaScript", "HTML", "CSS", "Algorithms"],
+      liveLink: "#",
+      codeLink: "https://github.com/rutu744/algorithm-visualizer",
+      year: "2024"
     },
     {
-      title: "Personal Finance Tracker",
-      description: "A web application that helps users track their expenses, create budgets, and visualize spending habits through interactive charts and reports.",
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Chart.js", "Firebase", "Tailwind CSS"],
-      liveLink: "https://finance-tracker.example.com",
-      codeLink: "https://github.com/rutugaikwad/finance-tracker",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather application that provides current weather and 5-day forecast for any location. Uses the OpenWeather API and geolocation services.",
-      image: "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      tags: ["JavaScript", "API", "CSS", "HTML"],
-      liveLink: "https://weather-app.example.com",
-      codeLink: "https://github.com/rutugaikwad/weather-app",
-    },
+      title: "BookMyMaid Web Application",
+      description: "Created an online platform for booking domestic help services, featuring a user-friendly interface with Bootstrap templates. Implemented backend functionality using PHP and MySQL.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      tags: ["PHP", "MySQL", "JavaScript", "Bootstrap", "HTML/CSS"],
+      liveLink: "#",
+      codeLink: "https://github.com/rutu744/bookmymaid",
+      year: "2022"
+    }
   ];
 
   return (
@@ -43,8 +38,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title">My Projects</h2>
         <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-          Here are some of my recent projects. Each one was carefully crafted to solve specific problems 
-          and showcase different skills and technologies.
+          Here are some of my key projects that showcase my skills and problem-solving abilities.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -56,6 +50,9 @@ const Projects = () => {
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
+                <div className="absolute top-3 right-3 bg-portfolio-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {project.year}
+                </div>
               </div>
               
               <div className="p-6">
@@ -100,7 +97,7 @@ const Projects = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="https://github.com/rutugaikwad" className="btn-secondary inline-block" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/rutu744" className="btn-secondary inline-block" target="_blank" rel="noopener noreferrer">
             View All Projects
           </a>
         </div>
