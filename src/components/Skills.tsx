@@ -4,17 +4,18 @@ const Skills = () => {
     { name: "Java", level: 85 },
     { name: "Python", level: 80 },
     { name: "PHP", level: 85 },
+    { name: "TypeScript", level: 78 },
     { name: "JavaScript", level: 80 },
-    { name: "HTML/CSS", level: 85 },
     { name: "SQL", level: 80 },
+    { name: "Node.js", level: 75 },
   ];
 
   const frontendSkills = [
     { name: "ReactJS", level: 75 },
-    { name: "HTML", level: 85 },
+    { name: "HTML/CSS3", level: 85 },
     { name: "Tailwind CSS", level: 80 },
-    { name: "JavaScript", level: 80 },
     { name: "Bootstrap", level: 85 },
+    { name: "Figma", level: 70 },
   ];
 
   const softSkills = [
@@ -101,8 +102,8 @@ const Skills = () => {
         <div className="mt-16">
           <h3 className="text-xl font-semibold mb-6 text-portfolio-dark">Technologies I Use</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            {["Java", "Python", "PHP", "ReactJS", "HTML", "Tailwind CSS", "JavaScript", "Bootstrap", 
-              "SQL", "MySQL", "SQLite", "Github", "VS Code", "Android Studio"].map((tech, index) => (
+            {["Java", "Python", "PHP", "TypeScript", "Node.js", "ReactJS", "HTML/CSS3", "Tailwind CSS", "JavaScript", "Bootstrap", 
+              "SQL", "MySQL", "SQLite", "Github", "VS Code", "Android Studio", "Figma"].map((tech, index) => (
               <span 
                 key={index}
                 className="px-4 py-2 bg-white shadow-sm rounded-full border border-gray-200 text-gray-700 hover:border-portfolio-primary transition-colors duration-300"

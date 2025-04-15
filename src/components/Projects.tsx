@@ -14,6 +14,15 @@ const Projects = () => {
       year: "2024-2025"
     },
     {
+      title: "Weather Dashboard",
+      description: "A weather forecast application that provides real-time weather data, 5-day forecasts, and location-based weather information with a clean, responsive UI.",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
+      tags: ["React", "OpenWeather API", "JavaScript", "CSS"],
+      liveLink: "#",
+      codeLink: "https://github.com/rutu744/weather-dashboard",
+      year: "2023"
+    },
+    {
       title: "Algorithm Visualizer",
       description: "Designed and implemented an interactive web-based tool to visualize various sorting algorithms, including Bubble Sort, Merge Sort, and Quick Sort, providing real-time visual feedback.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
