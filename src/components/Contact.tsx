@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 
@@ -46,7 +45,7 @@ const Contact = () => {
                   <Mail className="text-portfolio-primary mr-4" size={20} />
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="font-medium">your.email@example.com</p>
+                    <p className="font-medium">rutugaikwad744@gmail.com</p>
                   </div>
                 </div>
                 
