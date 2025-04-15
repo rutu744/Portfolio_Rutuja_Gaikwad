@@ -1,11 +1,7 @@
-
 import { Heart } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-portfolio-dark text-white py-8">
+  return <footer className="bg-portfolio-dark text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
@@ -37,13 +33,11 @@ const Footer = () => {
             © {currentYear} Rutuja Gaikwad. All rights reserved.
           </p>
           
-          <p className="text-gray-400 text-sm flex items-center mt-2 md:mt-0">
+          <p className="text-sm flex items-center mt-2 md:mt-0 text-gray-800">
             Made with <Heart size={14} className="mx-1 text-portfolio-accent" fill="currentColor" /> using React & TailwindCSS
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
