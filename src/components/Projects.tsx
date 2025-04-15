@@ -2,38 +2,39 @@
 import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
+  // Project information - edit or add more projects as needed
   const projects = [
     {
       title: "E-Commerce Website",
       description: "A fully responsive e-commerce platform built with React and Node.js. Features include product browsing, cart functionality, user authentication, and payment processing.",
       image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       tags: ["React", "Node.js", "MongoDB", "Express"],
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "https://ecommerce-demo.example.com",
+      codeLink: "https://github.com/rutugaikwad/ecommerce-website",
     },
     {
       title: "Task Management App",
       description: "A Kanban-style task management application that helps users organize their projects. Built with React and Firebase for real-time updates and authentication.",
       image: "https://images.unsplash.com/photo-1611224885990-2ae8a8bb85e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
       tags: ["React", "Firebase", "CSS", "Redux"],
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "https://task-manager.example.com",
+      codeLink: "https://github.com/rutugaikwad/task-manager",
     },
     {
-      title: "Fitness Tracker",
-      description: "A mobile-responsive fitness tracking application that allows users to log workouts, track progress, and set goals. Built with MERN stack.",
-      image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Express", "MongoDB", "Node.js"],
-      liveLink: "#",
-      codeLink: "#",
+      title: "Personal Finance Tracker",
+      description: "A web application that helps users track their expenses, create budgets, and visualize spending habits through interactive charts and reports.",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      tags: ["React", "Chart.js", "Firebase", "Tailwind CSS"],
+      liveLink: "https://finance-tracker.example.com",
+      codeLink: "https://github.com/rutugaikwad/finance-tracker",
     },
     {
       title: "Weather Dashboard",
       description: "A weather application that provides current weather and 5-day forecast for any location. Uses the OpenWeather API and geolocation services.",
       image: "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       tags: ["JavaScript", "API", "CSS", "HTML"],
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "https://weather-app.example.com",
+      codeLink: "https://github.com/rutugaikwad/weather-app",
     },
   ];
 
@@ -99,7 +100,7 @@ const Projects = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#" className="btn-secondary inline-block">
+          <a href="https://github.com/rutugaikwad" className="btn-secondary inline-block" target="_blank" rel="noopener noreferrer">
             View All Projects
           </a>
         </div>

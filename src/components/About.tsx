@@ -2,6 +2,21 @@
 import { User, Calendar, MapPin, Mail } from "lucide-react";
 
 const About = () => {
+  // Personal information - edit these details to customize your portfolio
+  const personalInfo = {
+    name: "Rutu Gaikwad",
+    email: "rutugaikwad744@gmail.com",
+    location: "Mumbai, India",
+    experience: "2 Years",
+    about: `I'm a passionate web developer with a strong background in creating responsive, 
+    user-friendly websites and applications. With expertise in both front-end and 
+    back-end technologies, I bring creative ideas to life through clean, efficient code.
+    
+    When I'm not coding, you can find me exploring new technologies, contributing to 
+    open-source projects, or enjoying the outdoors. I believe in continuous learning 
+    and staying up-to-date with the latest industry trends.`
+  };
+
   return (
     <section id="about" className="section bg-white">
       <div className="max-w-6xl mx-auto">
@@ -22,15 +37,11 @@ const About = () => {
           <div className="animate-fade-in delay-100">
             <h3 className="text-2xl font-semibold mb-4">Who am I?</h3>
             <p className="text-gray-700 mb-6">
-              I'm a passionate web developer with a strong background in creating responsive, 
-              user-friendly websites and applications. With expertise in both front-end and 
-              back-end technologies, I bring creative ideas to life through clean, efficient code.
+              {personalInfo.about.split('\n\n')[0]}
             </p>
             
             <p className="text-gray-700 mb-8">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or enjoying the outdoors. I believe in continuous learning 
-              and staying up-to-date with the latest industry trends.
+              {personalInfo.about.split('\n\n')[1]}
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -38,7 +49,7 @@ const About = () => {
                 <User className="text-portfolio-primary mr-3" size={20} />
                 <div>
                   <p className="text-sm text-gray-500">Name</p>
-                  <p className="font-medium">Your Name</p>
+                  <p className="font-medium">{personalInfo.name}</p>
                 </div>
               </div>
               
@@ -46,7 +57,7 @@ const About = () => {
                 <Mail className="text-portfolio-primary mr-3" size={20} />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="font-medium">your.email@example.com</p>
+                  <p className="font-medium">{personalInfo.email}</p>
                 </div>
               </div>
               
@@ -54,7 +65,7 @@ const About = () => {
                 <MapPin className="text-portfolio-primary mr-3" size={20} />
                 <div>
                   <p className="text-sm text-gray-500">Location</p>
-                  <p className="font-medium">Your City, Country</p>
+                  <p className="font-medium">{personalInfo.location}</p>
                 </div>
               </div>
               
@@ -62,7 +73,7 @@ const About = () => {
                 <Calendar className="text-portfolio-primary mr-3" size={20} />
                 <div>
                   <p className="text-sm text-gray-500">Experience</p>
-                  <p className="font-medium">X Years</p>
+                  <p className="font-medium">{personalInfo.experience}</p>
                 </div>
               </div>
             </div>

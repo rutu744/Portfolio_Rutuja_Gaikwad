@@ -1,7 +1,20 @@
+
 import { useState } from "react";
 import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 
 const Contact = () => {
+  // Contact information - edit these details to customize your contact section
+  const contactInfo = {
+    email: "rutugaikwad744@gmail.com",
+    phone: "+91 9876543210", // Replace with your actual phone number
+    location: "Mumbai, India",
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/rutugaikwad", // Replace with your actual LinkedIn profile
+      github: "https://github.com/rutugaikwad", // Replace with your actual GitHub profile
+      twitter: "https://twitter.com/rutugaikwad", // Replace with your actual Twitter handle
+    }
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,7 +58,7 @@ const Contact = () => {
                   <Mail className="text-portfolio-primary mr-4" size={20} />
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="font-medium">rutugaikwad744@gmail.com</p>
+                    <p className="font-medium">{contactInfo.email}</p>
                   </div>
                 </div>
                 
@@ -53,7 +66,7 @@ const Contact = () => {
                   <Phone className="text-portfolio-primary mr-4" size={20} />
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
-                    <p className="font-medium">+1 (555) 123-4567</p>
+                    <p className="font-medium">{contactInfo.phone}</p>
                   </div>
                 </div>
                 
@@ -61,7 +74,7 @@ const Contact = () => {
                   <MapPin className="text-portfolio-primary mr-4" size={20} />
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
-                    <p className="font-medium">Your City, Country</p>
+                    <p className="font-medium">{contactInfo.location}</p>
                   </div>
                 </div>
               </div>
@@ -69,19 +82,25 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mt-8 mb-4">Follow Me</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href={contactInfo.socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-primary hover:text-white transition-colors duration-300"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="#" 
+                  href={contactInfo.socialLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-primary hover:text-white transition-colors duration-300"
                 >
                   <Github size={20} />
                 </a>
                 <a 
-                  href="#" 
+                  href={contactInfo.socialLinks.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer" 
                   className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-primary hover:text-white transition-colors duration-300"
                 >
                   <Twitter size={20} />
